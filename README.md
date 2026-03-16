@@ -8,7 +8,7 @@
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/SEUUSUARIO/isca.git
+git clone https://github.com/ElBu3no/iSCA
 cd isca
 ```
 
