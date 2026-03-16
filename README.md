@@ -3,127 +3,82 @@
   <img src="iSCA.png" width="500">
 </p>
 
-## Usage
 
-### 1. Clone the repository
+<h1 align="center">iSCA</h1>
 
-```bash
-git clone https://github.com/ElBu3no/iSCA
-cd isca
-```
+<p align="center">
+<b>Initial Scanner de Cobertura Automatizado</b><br>
+Ferramenta de Recon automatizado para descoberta de superfície de ataque
+</p>
 
----
+<p align="center">
 
-### 2. Install dependencies
+![Bash](https://img.shields.io/badge/language-bash-blue)
+![Recon](https://img.shields.io/badge/purpose-recon-red)
+![BugBounty](https://img.shields.io/badge/bugbounty-ready-green)
+![Pentest](https://img.shields.io/badge/pentest-automation-purple)
+![License](https://img.shields.io/badge/license-MIT-white)
 
-Certifique-se de ter as ferramentas necessárias instaladas:
-
-* `subfinder`
-* `assetfinder`
-* `httpx`
-* `gau`
-* `waybackurls`
-* `katana`
-* `qsreplace`
-* `curl`
-* `jq`
+</p>
 
 ---
 
-### 3. Configure targets
+# 🎣 iSCA — Initial Scanner de Cobertura Automatizado
 
-Adicione os domínios que deseja analisar no arquivo `targets.txt`.
+O **iSCA (Initial Scanner)** é uma ferramenta desenvolvida para **automatizar o processo inicial de reconhecimento em aplicações web**.
 
-Example:
+A ideia é **mapear rapidamente a superfície de ataque de um domínio**, coletando o máximo de informações possíveis para análise posterior em processos de:
 
-```text
-example.com
-target.com
-company.com
-```
+- Bug Bounty
+- Pentest
+- Red Team
+- Security Research
 
----
-
-### 4. Configure GitHub Token (optional)
-
-Para habilitar busca por **secrets em repositórios GitHub**, configure seu token:
-
-```bash
-export GITHUB_TOKEN="your_token_here"
-```
+Inspirado em metodologias modernas de **Recon Automation** utilizadas por pesquisadores de segurança.
 
 ---
 
-### 5. Run iSCA
+# ⚡ Features
 
-Execute o scanner:
-
-```bash
-./isca.sh
-```
-
----
-
-### 6. Results
-
-Os resultados serão organizados automaticamente em pastas:
-
-```
-hunt_target/
-
-recon/
-  subs.txt
-  alive.txt
-
-urls/
-  urls_clean.txt
-
-params/
-  params.txt
-
-vulns/
-  xss.txt
-  sqli.txt
-  redirects.txt
-  graphql.txt
-
-secrets/
-  secrets_found.txt
-
-infra/
-  git_exposed.txt
-  buckets.txt
-```
+✔ Descoberta de subdomínios  
+✔ Enumeração de endpoints  
+✔ Coleta de URLs históricas  
+✔ Descoberta de parâmetros  
+✔ Fuzzing inicial  
+✔ Verificação de hosts ativos  
+✔ Organização automática dos resultados  
 
 ---
 
-### Example
+# 🧠 Objetivo
 
-```bash
-./isca.sh
-```
+O objetivo do **iSCA** é realizar um **scan inicial completo de cobertura**, ajudando a responder rapidamente:
 
-Output:
+- Quais subdomínios existem?
+- Quais endpoints existem?
+- Existem parâmetros interessantes?
+- Existem serviços expostos?
+- Existem possíveis vetores de ataque?
 
-```
-🔥 SCANNER AVANÇADO: example.com
-
-[+] Enumerating subdomains...
-[+] Discovering URLs...
-[+] Extracting parameters...
-[+] Testing vulnerabilities...
-
-✅ Scan completed
-```
+Isso cria uma **base sólida para exploração manual posterior**.
 
 ---
 
-### Recommended Usage
+# 🧰 Ferramentas Utilizadas
 
-iSCA é ideal para:
+O iSCA integra várias ferramentas comuns no ecossistema de **recon para bug bounty**:
 
-* Bug Bounty reconnaissance
-* Web attack surface discovery
-* API discovery
-* Initial vulnerability triage
-* Offensive security research
+- subfinder
+- assetfinder
+- httpx
+- gau
+- waybackurls
+- katana
+- nuclei
+- naabu
+- ffuf
+- dnsx
+
+---
+
+# 📂 Estrutura do Projeto
