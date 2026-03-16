@@ -99,4 +99,31 @@ infra/
 
 ### Example
 
-`
+```bash
+./isca.sh
+```
+
+Output:
+
+```
+🔥 SCANNER AVANÇADO: example.com
+
+[+] Enumerating subdomains...
+[+] Discovering URLs...
+[+] Extracting parameters...
+[+] Testing vulnerabilities...
+
+✅ Scan completed
+```
+
+---
+
+### Recommended Usage
+
+iSCA é ideal para:
+
+* Bug Bounty reconnaissance
+* Web attack surface discovery
+* API discovery
+* Initial vulnerability triage
+* Offensive security research
