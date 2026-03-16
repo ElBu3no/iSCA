@@ -106,7 +106,6 @@ iSCA
 
 Clone o repositório:
 
-```bash
 git clone https://github.com/ElBu3no/iSCA.git
 cd iSCA
 
@@ -212,17 +211,3 @@ Abra uma issue ou PR.
  Bug bounty templates
 
 🏴‍☠️ Happy Hunting
-
----
-
-💡 **Sugestão forte para seu projeto (experiência de quem vê muitos repos de bug bounty):**
-
-Se quiser, posso também te ajudar a criar:
-
-- **versão PRO do README (nível ferramenta famosa)**  
-- **diagrama visual do recon**
-- **GIF do scanner rodando**
-- **estrutura de outputs profissional**
-- **script iSCA v1.0 completo**
-
-Isso faz seu repo parecer **uma ferramenta real de segurança usada por hunters**.
